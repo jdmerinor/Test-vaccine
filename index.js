@@ -64,7 +64,8 @@ async function tryToGetAppointmentFromCalendarAsync(secondDosisCalendar, page) {
     args: ["--autoplay-policy=no-user-gesture-required"],
     defaultViewport: null,
   });
-  const url = "https://changeME!!!";
+  const url =
+    "https://nswhvam.health.nsw.gov.au/vam?id=reschedule_vaccination&taskId=CHANGEME!!!";
   const page = await browser.newPage();
   const cookies = JSON.parse(fs.readFileSync("./cookies.json", "utf-8"));
   await page.setCookie(...cookies);
